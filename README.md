@@ -12,10 +12,9 @@
 
 ## 📖 Description
 
-This project is a **RESTful API** built with **Node.js**, **Express**, and **TypeScript**.  
-It demonstrates **CRUD operations**, **authentication**, and **data validation**, designed for a **Stock Management System** (inventory, products, users, etc.).
-
-The goal is to provide a **clean, modular, and scalable backend** ready for production.
+This project is a modular and scalable RESTful API developed using Node.js, Express, and TypeScript.
+It implements robust CRUD operations, secure JWT authentication, and comprehensive data validation to manage inventory, products, and users efficiently.
+The application follows a clean architecture and best backend practices, making it production-ready and easily extensible for real-world stock management systems
 
 ---
 
