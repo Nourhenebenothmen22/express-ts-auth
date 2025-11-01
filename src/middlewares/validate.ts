@@ -13,18 +13,6 @@ export const registerValidator = [
     .notEmpty().withMessage("Password is required")
     .isLength({ min: 6 }).withMessage("Password must be at least 6 characters long"),
 
-  body("avatar")
-    .optional()
-    .custom((value) => {
-      const allowedExtensions = [".png", ".jpg", ".jpeg", ".gif", ".webp"];
-      const lowerValue = value.toLowerCase();
-      const isValid = allowedExtensions.some((ext) => lowerValue.endsWith(ext));
-
-      if (!isValid) {
-        throw new Error("Avatar must be a valid image file (.png, .jpg, .jpeg, .gif, .webp)");
-      }
-      return true;
-    }),
 ];
 
 export const loginValidator = [
